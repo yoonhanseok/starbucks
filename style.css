@@ -1,0 +1,489 @@
+ul, li {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+ a {
+  text-decoration: none;
+ }
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {
+  width: 100%;
+  height:100%;
+  z-index: 999;
+}
+
+#menuBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-top: black solid 2px;
+  background-color: #f6f5ef;
+  position: fixed;
+}
+
+.menuBarWrap {
+  display:flex;
+  flex-direction: column;
+  width: 1100px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.upperBar {
+  height: 120px;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+  background-image: url("https://www.starbucks.co.kr/common/img/common/logo.png");
+  position: absolute;
+  top: 15px;
+}
+
+.upperBar > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  padding-right: 50px;
+}
+
+.upperBar > ul li {
+  font-size: 13px;
+  font-weight: 300;
+  color: #555555;
+  padding: 20px;
+  line-height: 0;
+}
+
+.upperBar > ul span {
+  font-size: 13px;
+  color: #E6E6E6;
+  line-height: 0;
+}
+
+.searchIcon_pc {
+  align-self: center;
+  width: 34px;
+  height: 34px;
+  background-color: white;
+  border: #cccccc solid 1px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.searchIcon_pc img {
+  top: 6px;
+  right: 7px;
+  position: absolute;
+}
+
+.lowerBar {
+  width: 100%;
+  position: absolute;
+  height: 66px;
+  bottom: 0;
+}
+
+.lowerBar > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 66px;
+  margin: 0;
+}
+
+.lowerBar > ul li {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  color: #333333;
+  padding: 10px 25px;
+  /* line-height: 0; */
+}
+
+
+#mainContainer {
+  width: 100%;
+  position: relative;
+  top: 120px;
+}
+
+#topBanner {
+  display: flex;
+  justify-content: center;
+  height: 646px;
+  width: 100%;
+  position: relative;
+}
+
+#apologyTab {
+  position: fixed;
+  top: 150px;
+  left: 80%;
+  z-index: 99;
+}
+
+#topContents {
+  display: flex;
+  justify-content: center;
+  width: 1100px;
+  height: 100%;
+  position: relative;
+}
+
+.mainTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 30%;
+  left: -10%;
+  z-index: 98;
+}
+
+.mainTitle_img {
+  margin-bottom: 40px;
+}
+
+.mainTitle_btn {
+  position: absolute;
+  color: white;
+  border: white solid 2px;
+  border-radius: 5px;
+  z-index: 98;
+  padding: 5px;
+  left: 90px;
+}
+
+.mainDrink_img {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 98;
+}
+
+.mainDrink_img > div {
+  position: absolute;
+  top: 70px;
+}
+
+.mainDrink_img > div img {
+  width: 100%;
+}
+
+.mainDrink_img > div:first-child {
+  left: 20%;
+}
+
+.mainDrink_img > div:nth-child(2) {
+  margin-top: 70px;
+  left: 38%;
+}
+
+.mainDrink_img > div:nth-child(3) {
+  left: 64%;
+}
+
+.bgColorPattern {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.bgColorPattern .patternLeft {
+  width: 100%;
+  height: 100%;
+  background-color: #C2D52F;
+}
+
+.bgColorPattern .patternRight {
+  width: 100%;
+  height: 100%;
+  background-color: #87C9E2;
+}
+
+#noticeBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 62px;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+
+.noticeBarLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  height: 100%;
+  position: relative;
+  color: white;
+}
+.noticeBarLeft > ul {
+  height: 26px;
+  font-weight: 300;
+  overflow: hidden;
+}
+
+.noticeBarLeftAdd {
+  height: 36px;
+  width: 36px;
+  background-image: url("https://www.starbucks.co.kr/common/img/common/btn_notice_plus.png");
+  background-size: 36px 36px;
+  background-position: center;
+}
+
+.noticeBarRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  height: 100%;
+  position: relative;
+  color: black;
+  padding: 0 15px;
+}
+
+.noticeBarRightArrow {
+  height: 36px;
+  width: 36px;
+  background-image: url("https://image.istarbucks.co.kr/common/img/common/btn_prom_down.png");
+  background-size: 36px 36px;
+  background-position: center;
+  margin-left: 20%;
+}
+
+.noticeBgColorPattern {
+  width: 100%;
+  height: 62px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.noticeBgColorPattern .patternLeft {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.noticeBgColorPattern .patternRight {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+#starbucksRewards {
+  height: 170px;
+  width: 100%;
+  padding: 40px 0;
+  background-color: #1E3933;
+}
+
+
+#productA {
+  height: 572px;
+  width: 100%;
+  background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer2_bean_bg.jpg");
+  background-position: center;
+}
+
+#productB {
+  height: 400px;
+  width: 100%;
+  background-image: url("https://image.istarbucks.co.kr/img/event/2022/reserve_2022_indonesia_visual_bg.jpg");
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.productB_title {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 25%;
+  left: 23%;
+}
+
+.productB_btn {
+  position: absolute;
+  color: #B9813D;
+  border: #B9813D solid 2px;
+  border-radius: 5px;
+  z-index: 98;
+  padding: 5px 30px;
+  left: 250px;
+  top: 150px;
+}
+
+.productB_img {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2022/reserve_2022_indonesia_visual3.png");
+  background-position: center;
+  position: absolute;
+  top: 0;
+
+}
+
+.productB_decoImg img:first-child {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  z-index: 5;
+}
+
+.productB_decoImg img:nth-child(2){
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  z-index: 5;
+}
+
+#menuInfo {
+  height: 800px;
+  background-image: url("https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto 100%;
+}
+
+#reserveMagazine {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2021/reserve_bg_pc.png");
+  background-size: auto 340px;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.reserveMagazineWrap {
+  width: 1100px;
+  position: relative;
+}
+
+.reserveMagazine_img {
+  width: 348px;
+  height: 374px;
+  background-image: url("https://image.istarbucks.co.kr/img/event/2022/reserve_visual_pc_220119.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: 61%;
+}
+
+.reserveMagazine_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 10px;;
+  top: 150px;
+}
+
+.reserveMagazine_btn {
+  position: absolute;
+  color: black;
+  border: black solid 2px;
+  border-radius: 5px;
+  z-index: 98;
+  padding: 5px 30px;
+  left: 250px;
+  top: 120px;
+}
+
+#storeInfo {
+  height: 400px;
+  background-image: url("https://www.starbucks.co.kr/common/img/main/store_bg.jpg");
+  background-size: auto 100%;
+}
+
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #2C2A2A;
+  padding: 20px 0;
+  position: relative;
+  top: 120px;
+}
+
+#footerWrap {
+  align-self: center;
+  width: 1200px;
+  height: 100%;
+}
+
+#footerAward {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80px;
+  padding-top: 20px;
+  position: relative;
+  z-index: 89;
+}
+
+.footerAwardUpper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  z-index: 90;
+}
+
+.footerAwardLower {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  z-index: 90;
+}
+
+.footerAwardBackground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #282828;
+  z-index: 5;
+}
