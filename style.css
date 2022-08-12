@@ -416,18 +416,32 @@ header {
 /* =================== */
 
 #starbucksRewards {
-  height: 170px;
+  height: 250px;
   width: 100%;
-  padding: 40px 0;
+  padding: 0;
   background-color: #1E3933;
 }
 
 .starbucksRewardsWrap {
   width: 1100px;
   margin: 0 auto;
+  padding: 40px 0;
+  position: relative;
+  top: 0px;
 }
 
-.starbucksRewardsWrap > span > img {
+.starbucksRewardsWrap > div {
+  margin: 0;
+  padding: 0;
+}
+
+.starbucksRewardsWrap > div:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 220px;
+}
+
+.starbucksRewardsWrap > img {
   width: 176px;
 }
 
