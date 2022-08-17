@@ -87,17 +87,26 @@ header {
 }
 
 .lowerBar {
-  width: 100%;
+  /* width: 100%; */
   position: absolute;
   height: 66px;
+  /* width: 100%; */
   bottom: 0;
+}
+
+.lowerBarWrap {
+  height: 100%;
+  width: 750px;
+
 }
 
 .lowerBar > ul {
   /* display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: flex-end; */
   height: 66px;
+  width: auto;
   margin: 0;
 }
 
@@ -112,7 +121,10 @@ header {
   color: #333333;
   padding: 10px 25px;
   cursor: pointer;
-  /* line-height: 0; */
+}
+
+.lowerBar > ul > li > div:first-child {
+  width: auto;
 }
 
 
@@ -328,6 +340,7 @@ header {
   border: none;
   padding: 40px 0;
   background-color: #F5F4EF;
+  overflow: hidden;
 }
 
 .bx-wrapper {
@@ -349,6 +362,7 @@ header {
 
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
   width: 69px;
+  top: 543px;
   left: 47%;
 }
 
@@ -414,7 +428,7 @@ header {
 }
 
 .bx-controls-auto {
-  top: 559px;
+  top: 555px;
   left: 43%;
 }
 
@@ -526,6 +540,51 @@ header {
   background-position: center;
 }
 
+.productAWrap {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.productAWrap > img {
+  position: absolute;
+  top: 18%;
+  left: 11%;
+  max-width: 164px;
+}
+
+.productA_title {
+  position: absolute;
+  width: 324px;
+  height: 297px;
+  right: 4%;
+  top: 25%;
+}
+
+.productA_title > div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.productA_title > div > img {
+  position: absolute;
+  top: 12%;
+  left: 0;
+}
+
+.productA_btn {
+  position: absolute;
+  top: 65%;
+  left: 0;
+  padding: 7px 20px;
+  border: white solid 2px;
+  border-radius: 5px;
+  color: white;
+}
+
+
 #productB {
   height: 400px;
   width: 100%;
@@ -589,6 +648,77 @@ header {
   background-size: auto 100%;
 }
 
+.menuInfoWrap {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.menuInfoWrap > img {
+  position: absolute;
+  width: 612px;
+  top: 10%;
+  right: 15px;
+}
+
+.menuInfo_title {
+  position: absolute;
+  width: 365px;
+  height: 400px;
+  top: 15%;
+  left: 3%;
+}
+
+.menuInfo_title_word {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+
+.menuInfo_title_word img {
+  position: absolute;
+  right: 0;
+}
+
+.menuInfo_title_word_Upper {
+  position: absolute;
+  width: 365px;
+  right: 0;
+  color: white;
+  text-align: right;
+  letter-spacing: -1px;
+  line-height: 27px;
+  font-size: 27px;
+  font-weight: 300;
+  top: 250px;
+}
+
+.menuInfo_title_word_Lower {
+  position: absolute;
+  width: 380px;
+  right: 0;
+  top: 320px;
+  color: white;
+  text-align: right;
+  letter-spacing: -1px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.menuInfo_btn {
+  position: absolute;
+  letter-spacing: -1px;
+  right: 0;
+  top: 440px;
+  padding: 7px 25px;
+  border: white solid 2px;
+  border-radius: 5px;
+  color: white;
+}
+
+
 #reserveMagazine {
   display: flex;
   justify-content: center;
@@ -632,18 +762,89 @@ header {
   border: black solid 2px;
   border-radius: 5px;
   z-index: 98;
-  padding: 5px 30px;
+  padding: 5px 25px;
   left: 250px;
   top: 120px;
 }
 
 #storeInfo {
   height: 400px;
+  width: 100%;
   background-image: url("https://www.starbucks.co.kr/common/img/main/store_bg.jpg");
   background-size: auto 100%;
+  overflow: hidden;
 }
 
+.storeInfoWrap {
+  position: relative;
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+}
 
+.storeInfoWrap > img {
+  position: absolute;
+}
+
+.storeInfoWrap > img:first-child {
+  left: 350px;
+  bottom: 5%;
+  z-index: 5;
+}
+
+.storeInfoWrap > img:nth-child(2) {
+  left: 130px;
+}
+
+.storeInfoWrap > img:nth-child(3) {
+  top: -15%;
+  left: 44%;
+}
+
+.storeInfoWrap > img:nth-child(4) {
+  right: 0;
+  bottom: 0;
+}
+
+.storeInfoWord {
+  width: 410px;
+  height: 210px;
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+
+.storeInfoWordWrap {
+  position: relative;
+  color: #333333;
+  letter-spacing: -1px;
+}
+
+.storeInfoWordWrap div:first-child {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.storeInfoWordWrap div:nth-child(2) {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.storeInfoWordWrap div:nth-child(3) {
+  position: absolute;
+  font-size: 15px;
+  font-weight: 400;
+  top: 55px;
+}
+
+.storeInfo_btn {
+  position: absolute;
+  padding: 5px 30px;
+  border: #333333 solid 2px;
+  border-radius: 5px;
+  top: 170px;
+
+}
 
 footer {
   display: flex;
