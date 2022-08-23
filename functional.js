@@ -4,6 +4,26 @@
 
 $(document).ready(function(){
 
+  $(".menuBarWrap > .lowerBar > ul > li").hover(function(){
+    $(this).css({
+      color: "#669900",
+    });
+  }, function(){
+    $(this).css({
+      color: "#333333",
+    });
+  });
+
+  $(".menuBarWrap > .lowerBar > ul > li > div:first-child").hover(function(){
+    $(this).css({
+      textDecoration: "underline",
+    });
+  }, function(){
+    $(this).css({
+      textDecoration: "",
+    });
+  });
+
   // ======== 스벅 프로모션바 클릭
   $(".noticeBarRightArrow").click(function(){
     $(this).css({
