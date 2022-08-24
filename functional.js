@@ -4,6 +4,10 @@
 
 $(document).ready(function(){
 
+  $(".coffeeHover, .menuHover, .storeHover, .responsibilityHover, .starbucksHover, .whatsNewsHover").css({
+    display: "none",
+  });
+
   $(".lowerBar ul li .menuCoffee, .coffeeHover").hover(function(){
     $(".lowerBar ul li .menuCoffee").css({
       color: "#669900",
@@ -16,6 +20,76 @@ $(document).ready(function(){
       background: "#f6f5ef",
     });
     $(".coffeeHover").slideUp();
+  });
+
+  $(".lowerBar ul li .menuMenu, .menuHover").hover(function(){
+    $(".lowerBar ul li .menuMenu").css({
+      color: "#669900",
+      background: "#2C2A29",
+    });
+    $(".menuHover").slideDown();
+  }, function(){
+    $(".lowerBar ul li .menuMenu").css({
+      color: "#333333",
+      background: "#f6f5ef",
+    });
+    $(".menuHover").slideUp();
+  });
+
+  $(".lowerBar ul li .menuStore, .storeHover").hover(function(){
+    $(".lowerBar ul li .menuStore").css({
+      color: "#669900",
+      background: "#2C2A29",
+    });
+    $(".storeHover").slideDown();
+  }, function(){
+    $(".lowerBar ul li .menuStore").css({
+      color: "#333333",
+      background: "#f6f5ef",
+    });
+    $(".storeHover").slideUp();
+  });
+
+  $(".lowerBar ul li .menuResponsibility, .responsibilityHover").hover(function(){
+    $(".lowerBar ul li .menuResponsibility").css({
+      color: "#669900",
+      background: "#2C2A29",
+    });
+    $(".responsibilityHover").slideDown();
+  }, function(){
+    $(".lowerBar ul li .menuResponsibility").css({
+      color: "#333333",
+      background: "#f6f5ef",
+    });
+    $(".responsibilityHover").slideUp();
+  });
+
+  $(".lowerBar ul li .menuStarbucks, .starbucksHover").hover(function(){
+    $(".lowerBar ul li .menuStarbucks").css({
+      color: "#669900",
+      background: "#2C2A29",
+    });
+    $(".starbucksHover").slideDown();
+  }, function(){
+    $(".lowerBar ul li .menuStarbucks").css({
+      color: "#333333",
+      background: "#f6f5ef",
+    });
+    $(".starbucksHover").slideUp();
+  });
+
+  $(".lowerBar ul li .menuWhats, .whatsNewsHover").hover(function(){
+    $(".lowerBar ul li .menuWhats").css({
+      color: "#669900",
+      background: "#2C2A29",
+    });
+    $(".whatsNewsHover").slideDown();
+  }, function(){
+    $(".lowerBar ul li .menuWhats").css({
+      color: "#333333",
+      background: "#f6f5ef",
+    });
+    $(".whatsNewsHover").slideUp();
   });
 
 
