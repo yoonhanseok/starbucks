@@ -4,15 +4,20 @@
 
 $(document).ready(function(){
 
-  $(".menuBarWrap > .lowerBar > ul > li").hover(function(){
-    $(this).css({
+  $(".lowerBar ul li .menuCoffee, .coffeeHover").hover(function(){
+    $(".lowerBar ul li .menuCoffee").css({
       color: "#669900",
+      background: "#2C2A29",
     });
+    $(".coffeeHover").slideDown();
   }, function(){
-    $(this).css({
+    $(".lowerBar ul li .menuCoffee").css({
       color: "#333333",
+      background: "#f6f5ef",
     });
+    $(".coffeeHover").slideUp();
   });
+
 
   $(".menuBarWrap > .lowerBar > ul > li > div:first-child").hover(function(){
     $(this).css({
