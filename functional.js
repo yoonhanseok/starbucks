@@ -4,6 +4,42 @@
 
 $(document).ready(function(){
 
+  $(window).scroll(function(){
+    if($(this).scrollTop() > "400") {
+      $("#coffeePack, .productA_title").addClass("animate");
+    } else {
+      $("#coffeePack, .productA_title").removeClass("animate");
+    }
+  });
+
+  $(window).scroll(function(){
+    if($(this).scrollTop() > "1600") {
+      $("#pyfTitle, .menuInfo_btn").addClass("animate");
+      $(".menuInfo_title_word_Upper, .menuInfo_title_word_Lower").addClass("animateSlow");
+    } else {
+      $("#pyfTitle, .menuInfo_btn").removeClass("animate");
+      $(".menuInfo_title_word_Upper, .menuInfo_title_word_Lower").removeClass("animateSlow");
+    }
+  });
+
+  $(window).scroll(function(){
+    if($(this).scrollTop() > "2000") {
+      $(".reserveMagazine_img").addClass("animate");
+    } else {
+      $(".reserveMagazine_img").removeClass("animate");
+    }
+  });
+
+  $(window).scroll(function(){
+    if($(this).scrollTop() > "2400") {
+      $(".storeInfoWordWrap div:nth-child(3)").addClass("animate");
+      $(".storeInfoWordWrap div:first-child, .storeInfoWordWrap div:nth-child(2), .storeInfo_btn").addClass("animateSlow");
+    } else {
+      (".storeInfoWordWrap div:nth-child(3)").removeClass("animate");
+      $(".storeInfoWordWrap div:first-child, .storeInfoWordWrap div:nth-child(2), .storeInfo_btn").removeClass("animateSlow");
+    }
+  });
+
   $(".coffeeHover, .menuHover, .storeHover, .responsibilityHover, .starbucksHover, .whatsNewsHover").css({
     display: "none",
   });
