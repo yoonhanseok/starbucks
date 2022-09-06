@@ -1,5 +1,9 @@
 /* ====================모바일 화면============================ */
 @media screen and (max-width: 960px) {
+  .forPcVer {
+    display: none;
+  }
+
   ul, li {
     list-style: none;
     padding-inline-start: 0;
@@ -30,6 +34,7 @@
     position: fixed;
     top: 0;
     z-index: 10000;
+    border-bottom: #e4e6e5 solid 1px;
   }
 
   .menuBar_M_wrap {
@@ -361,11 +366,12 @@
 
   .starbucksPromotion_bxslider > div > div {
     position: absolute;
-    top: 500px;
-    left: 43%;
+    top: 266px;
+    left: 35%;
     text-align: center;
     font-size: 15px;
-    padding: 8px 25px;
+    padding: 8px 21px;
+    font-size: 14px;
     width: 80px;
     border: black solid 2px;
     border-radius: 3px;
@@ -416,20 +422,33 @@
   /* =================== */
 
   #starbucksRewards {
-    height: 250px;
+    height: 715px;
     width: 100%;
     padding: 0;
     background-color: #1E3933;
     color: white;
+    text-align: center;
     overflow: hidden;
   }
 
   .starbucksRewardsWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin: 0 auto;
     padding: 40px 0;
     position: relative;
     top: 0px;
+  }
+
+  .starbucksRewards_upper {
+    line-height: 24px;
+  }
+
+  .starbucksRewards_lower {
+    line-height: 24px;
   }
 
   .starbucksRewardsWrap > div {
@@ -443,7 +462,7 @@
     /* == upper */
     border-bottom: #4B615B solid 1.5px;
     padding-bottom: 15px;
-    font-size: 17px;
+    font-size: 14px;
     position: relative;
   }
 
@@ -455,52 +474,53 @@
   }
 
   .starbucksRewardsWrap > div > div > div {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
     padding-bottom: 10px;
   }
 
   .starbucksRewardsWrap > div:nth-child(2) {
-    position: absolute;
     top: 0;
     left: 220px;
   }
 
   .starbucksRewardsWrap > img {
-    width: 176px;
+    width: 156px;
   }
 
   .starbucksRewards_btnGroup {
-    position: absolute;
-    right: 0;
-    bottom: 20px;
+    display: block;
+    position: relative;
+    margin-top: 23px;
+    margin-bottom: 12px;
   }
 
   .starbucksRewards_join, .starbucksRewards_login {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .starbucksRewards_join {
-    padding: 6px 18.5px;
-    border-radius: 7px;
+    padding: 6px 40px;
+    border-radius: 3px;
     border: #00704A solid 1.5px;
     background-color: #00704A;
     cursor: pointer;
   }
 
   .starbucksRewards_login {
-    padding: 6px 18.5px;
-    border-radius: 7px;
+    padding: 6px 40px;
+    border-radius: 3px;
     border: white solid 1.5px;
     cursor: pointer;
   }
 
   .starbucksRewards_egift {
-    position: absolute;
+    display: block;
     right: 0;
     bottom: 16px;
-    padding: 6px 27px;
-    border-radius: 7px;
+    padding: 6px 0px;
+    margin: 20px 65px;
+    border-radius: 3px;
     border: white solid 1.5px;
     cursor: pointer;
   }
@@ -887,6 +907,10 @@
 @media screen and (min-width: 961px) {
 
 #menuBar_M {
+  display: none;
+}
+
+.forMobileVer {
   display: none;
 }
 
