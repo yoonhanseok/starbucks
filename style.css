@@ -1011,6 +1011,12 @@
     height: 50px;
   }
 
+  #footerAward > div > div > span > img {
+    border: #ffffff solid 2 !important;
+    box-shadow: 0 0 0 #ffffff;
+    width: 50%;
+  }
+
   #footerAward > span > img {
     cursor: pointer;
     width: 50%;
