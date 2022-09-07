@@ -25,6 +25,8 @@
     display: none;
   }
 
+
+
   #menuBar_M {
     display: flex;
     align-items: center;
@@ -35,6 +37,10 @@
     top: 0;
     z-index: 10000;
     border-bottom: #e4e6e5 solid 1px;
+  }
+
+  #popUpslide {
+    z-index: 15000;
   }
 
   .menuBar_M_wrap {
@@ -1028,8 +1034,6 @@
   }
 
   #footerItem {
-    /* display: flex;
-    justify-content: center; */
     color: #cbcbcb;
     font-size: 12px;
     margin-top: 20px;
