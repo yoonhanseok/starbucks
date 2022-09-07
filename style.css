@@ -88,7 +88,7 @@
   }
 
   #topBanner {
-    height: 1070px;
+    height: 1050px;
     width: auto;
     position: relative;
   }
@@ -126,11 +126,11 @@
     color: white;
     border: white solid 2px;
     border-radius: 5px;
-    font-weight: bold;
+    font-size: 13px;
     z-index: 999;
-    padding: 5px 10px;
-    left: 90px;
-    top: 545%;
+    padding: 6px 20px;
+    left: 85px;
+    top: 498%;
     cursor: pointer;
   }
 
@@ -156,14 +156,14 @@
   .mainDrink_img > div:nth-child(2) {
     width: 50%;
     position: absolute;
-    top: 41%;
+    top: 38%;
     left: 200px;
   }
 
   .mainDrink_img > div:nth-child(3) {
     width: 50%;
     position: absolute;
-    top: 64%;
+    top: 56%;
     left: 33px;
   }
 
@@ -614,9 +614,10 @@
 
 
   #productB {
-    height: 400px;
+    height: 715px;
     width: 100%;
-    background-image: url("https://image.istarbucks.co.kr/img/event/2022/reserve_2022_indonesia_visual_bg.jpg");
+    background-image: url("https://image.istarbucks.co.kr/upload/common/img/main/2022/reserve_2022_rwanda_sholi_mobile.jpg");
+    background-size: 100%;
     background-position: center;
     position: relative;
     overflow: hidden;
@@ -634,13 +635,15 @@
 
   .productB_btn {
     position: relative;
-    color: #B9813D;
-    border: #B9813D solid 2px;
-    border-radius: 5px;
+    color: white;
+    background-color: #1C294E;
+    border: white solid 2px;
+    border-radius: 3px;
     z-index: 98;
-    padding: 5px 30px;
-    left: 75px;
-    top: 30px;
+    padding: 5px 20px;
+    left: 249px;
+    top: 420px;
+    font-size: 13px;
   }
 
   .productB_img {
@@ -898,9 +901,10 @@
 
   .storeInfo_btn {
     position: absolute;
-    padding: 4px 27px;
+    padding: 3px 27px;
     border: #333333 solid 2px;
     border-radius: 3px;
+    font-size: 13px;
     right: 33%;
     top: 195px;
   }
@@ -964,6 +968,7 @@
   }
 
   .footerMenuRow > ul {
+    display: none;
     margin: 0;
   }
 
