@@ -40,7 +40,89 @@
   }
 
   #popUpslide {
+    position: fixed;
     z-index: 15000;
+    top: 0;
+    right: 0;
+  }
+
+  .searchWrap {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px;
+    background-color: #2D2825;
+    border: #222222 solid 1px;
+  }
+
+  #searchButton {
+    width: 70px;
+    height: 30px;
+    color: white;
+    background-color: #666666;
+    border-radius: 3px;
+    box-shadow: 0;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+  }
+
+  .searchWrap input {
+    width: 140px;
+    height: 24px;
+    margin-right: 7px;
+  }
+
+  .popUpMenu {
+    width: 275px;
+    position: relative;
+  }
+
+  .popUpMenu_arrow {
+    width: 16px;
+    height: 10px;
+    background-image: url("https://www.starbucks.co.kr/common/img/common/mob_gnb_arrow_down_w.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 15px;
+    top: 24px;
+  }
+
+  .popUpMenu > div {
+    color: white;
+    padding: 15px 30px 15px 5px;
+    background-color: #111111;
+    font-size: 13px;
+    text-indent: 15px;
+    border: #222222 solid 1px;
+  }
+
+  #popUpslide > div:nth-child(2) > div {
+    color: white;
+    padding: 15px 30px 15px 5px;
+    background-color: #2D2825;
+    font-size: 13px;
+    text-indent: 15px;
+  }
+
+  .popUpMenu > ul {
+    margin: 0;
+    /* display: none; */
+  }
+
+  .popUpMenu > ul > li > div {
+    color: white;
+    padding: 15px 20px 15px 0px;
+    background-color: #181818;
+    font-size: 14px;
+    text-indent: 25px;
+  }
+
+  .popUpMenu > ul > li > ul > li {
+    width: 100%;
+    color: #999999;
+    padding: 6px 20px 6px 15px;
+    background-color: #222222;
   }
 
   .menuBar_M_wrap {
