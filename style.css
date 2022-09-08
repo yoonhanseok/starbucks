@@ -1,8 +1,6 @@
 /* ====================모바일 화면============================ */
 @media screen and (max-width: 960px) {
-  .forPcVer {
-    display: none !important;
-  }
+
 
   @keyframes fadeIn{
     0% {opacity: 0;}
@@ -440,6 +438,7 @@
     background-image: url("https://image.istarbucks.co.kr/common/img/common/btn_prom_down.png");
     background-size: 30px 30px;
     background-position: center;
+    transform: scaleY(-1);
     cursor: pointer;
   }
 
@@ -1080,7 +1079,7 @@
     width: 100%;
     height: 100%;
     background-color: #2C2A2A;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     position: relative;
     top: 70px;
     z-index: 85;
@@ -1186,7 +1185,6 @@
     padding: 30px 0;
     position: relative;
     margin-top: 30px;
-    margin-bottom: 10px;
     background-color: #282828;
     z-index: 89;
     overflow: hidden;
@@ -1198,12 +1196,11 @@
     justify-content: center;
     align-content: center;
     width: 100%;
-    background-color: #282828;
     border: #282828 solid 2px;
   }
 
   .award_bxslider div img {
-    width: auto;
+    width: 40%;
   }
 
   .award_wrap > .bx-wrapper {
@@ -1229,7 +1226,7 @@
     align-items: center;
     color: #cbcbcb;
     font-size: 12px;
-    margin: 20px 0;
+    margin-top: 20px;
   }
 
   #footerItem > div > span {
@@ -1249,11 +1246,6 @@
   #footerItem > div:last-child > span:last-child {
     border-right: #2C2A2A solid 0px;
   }
-
-  /* #footerItem > span:nth-child(2n) {
-    color: #666666;
-    font-weight: 300;
-  } */
 
   .footerButton {
     margin: 0 auto;
@@ -1292,6 +1284,10 @@
     padding: 0 !important;
   }
 
+  .forPcVer {
+    display: none !important;
+  }
+
 }
 
 /* =============================일반 화면===================== */
@@ -1300,10 +1296,6 @@
 @media screen and (min-width: 961px) {
 
 #menuBar_M {
-  display: none;
-}
-
-.forMobileVer {
   display: none;
 }
 
