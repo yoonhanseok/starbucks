@@ -1299,6 +1299,10 @@
   display: none;
 }
 
+.forMobileVer {
+  display: none;
+}
+
 ul, li {
   list-style: none;
   padding-inline-start: 0;
